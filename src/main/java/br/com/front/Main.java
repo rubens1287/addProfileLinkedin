@@ -59,7 +59,8 @@ public class Main extends JFrame{
 
                 if(!textField2.getText().isEmpty()){
                     searchAnyThing(textField2.getText());
-                    esperar(3);
+                    esperar(2);
+                    new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Pessoas']")));
                     driver.findElement(By.xpath("//span[text()='Pessoas']")).click();
                 }
 
@@ -73,23 +74,31 @@ public class Main extends JFrame{
                     pages = Integer.parseInt(textField1.getText());
                 }
 
-                esperar(3);
+                esperar(1);
 
                 for (int l = 0; l < pages ; l++) {
 
-                    List<WebElement> conexoes = endOfPage(driver);
+                    List<WebElement> conexoes;
 
-                    esperar(3);
+                    endOfPage(driver);
+
+                    esperar(1);
+
+                    endOfPage(driver);
+
+                    esperar(1);
+
+                    conexoes = conexoes = driver.findElements(By.xpath("//button[@data-control-name='srp_profile_actions']"));
 
                     for (int j = 0; j < conexoes.size(); j++) {
-                        //Verifications.wait(3);
+                        esperar(1);
                         if(conexoes.size() != 0){
                             if(conexoes.get(j).getText().contains("Conectar")){
 
                                 action.moveToElement( conexoes.get(j)).perform();
 
                                 if(conexoes.get(j).isEnabled()){
-                                    esperar(3);
+                                    esperar(1);
                                     new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(conexoes.get(j)));
                                     conexoes.get(j).click();
                                     esperar(1);
@@ -101,8 +110,8 @@ public class Main extends JFrame{
                         }
                     }
                     esperar(1);
-                    avanca(driver);
                     action.moveToElement(driver.findElement(By.xpath("//span[text()='Avançar']"))).perform();
+                    endOfPage(driver);
                     esperar(1);
                     driver.findElement(By.xpath("//span[text()='Avançar']")).click();
                 }
@@ -142,18 +151,10 @@ public class Main extends JFrame{
         driver.findElement(By.xpath("//input[@placeholder='Pesquisar']")).sendKeys(Keys.ENTER);
     }
 
-    public void avanca(WebDriver driver){
-        for (int i = 0; i < 4; i++) {
-            driver.findElement(By.xpath("//body")).sendKeys(Keys.PAGE_DOWN);
-        }
-    }
-
     public List<WebElement> endOfPage(WebDriver driver){
         List<WebElement> conexoes = null;
         for (int i = 0; i < 4; i++) {
-            conexoes = driver.findElements(By.xpath("//button[@data-control-name='srp_profile_actions']"));
             driver.findElement(By.xpath("//body")).sendKeys(Keys.PAGE_DOWN);
-            esperar(1);
         }
         return conexoes;
     }
