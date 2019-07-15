@@ -30,6 +30,8 @@ public class Main extends JFrame{
     private JTextField textField2;
     private JButton button1;
     private JLabel jResults;
+    private JTextField textFieldAddNota;
+    private JLabel AddNotalLbl;
     public static WebDriver driver;
 
 
@@ -108,6 +110,13 @@ public class Main extends JFrame{
                                         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(conexoes.get(j)));
                                         conexoes.get(j).click();
                                         esperar(1);
+
+                                        if(!textFieldAddNota.getText().isEmpty()){
+                                            driver.findElement(By.xpath("//div[contains(@class,'send-invite__actions')]//button[1]")).click();
+                                            new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.name("message")));
+                                            driver.findElement(By.name("message")).sendKeys(textFieldAddNota.getText());
+                                        }
+
                                         driver.findElement(By.xpath("//div[contains(@class,'send-invite__actions')]//button[2]")).click();
                                         perfiladd++;
                                         jResults.setText(String.valueOf(perfiladd));

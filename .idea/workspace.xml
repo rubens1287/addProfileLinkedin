@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4806bccf-3baa-4395-aea8-5125592a66ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/image/linkedin_SnK_icon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/883975b2796ed334c5b8c05ed79e22068fdb4785" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/883975b2796ed334c5b8c05ed79e22068fdb4785" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/front/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/front/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/add-profile-from-linkedin-1.1-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/add-profile-from-linkedin-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/add-profile-from-linkedin-1.2-shaded.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/add-profile-from-linkedin-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/front/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/front/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/front/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/front/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/front/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/front/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/front/Task.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/front/Task.form" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -39,12 +33,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/front/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1036">
-              <caret line="151" column="11" lean-forward="true" selection-start-line="151" selection-start-column="11" selection-end-line="151" selection-end-column="11" />
+            <state relative-caret-position="196">
+              <caret line="173" selection-start-line="173" selection-end-line="173" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6090#6091#0" expanded="true" />
-                <element signature="e#6117#6118#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/ImageIcon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="2975">
               <caret line="216" selection-start-line="216" selection-end-line="216" />
               <folding>
                 <element signature="e#6758#6759#0" expanded="true" />
@@ -88,8 +80,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/br/com/front/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/front/Task.form" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/front/Task.form" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/front/Main.java" />
       </list>
     </option>
@@ -102,10 +94,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="170" />
+    <option name="y" value="91" />
+    <option name="width" value="1026" />
+    <option name="height" value="546" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -122,11 +114,6 @@
               <item name="addprofilefromlinkedin" type="b2602c69:ProjectViewProjectNode" />
               <item name="addprofilefromlinkedin" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="addprofilefromlinkedin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="addprofilefromlinkedin" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -135,8 +122,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="279" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="317" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../framework-V3.3" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -216,7 +206,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -224,7 +214,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.13125" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.13103953" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -233,8 +223,8 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="SonarLint" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32910052" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32592592" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.2867725" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32543445" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.23380727" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -249,6 +239,22 @@
     </layout>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/front/Main.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/br/com/front/Main.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="conexoes.get(j).getText()" />
@@ -275,12 +281,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/image/linkedIn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/image/linkedIn.png" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/swing/ImageIcon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="2975">
           <caret line="216" selection-start-line="216" selection-end-line="216" />
           <folding>
             <element signature="e#6758#6759#0" expanded="true" />
@@ -288,24 +292,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/front/Task.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/front/Task.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/front/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1036">
-          <caret line="151" column="11" lean-forward="true" selection-start-line="151" selection-start-column="11" selection-end-line="151" selection-end-column="11" />
+        <state relative-caret-position="196">
+          <caret line="173" selection-start-line="173" selection-end-line="173" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6090#6091#0" expanded="true" />
-            <element signature="e#6117#6118#0" expanded="true" />
           </folding>
         </state>
       </provider>
