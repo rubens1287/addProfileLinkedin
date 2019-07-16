@@ -12,9 +12,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -30,25 +34,25 @@ public class Main extends JFrame{
     private JTextField textField2;
     private JButton button1;
     private JLabel jResults;
-    private JTextField textFieldAddNota;
     private JLabel AddNotalLbl;
+    private JTextArea textArea1;
     public static WebDriver driver;
 
 
     public Main() {
-
         super("Linkedin Add profiles");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setBounds(100, 100, 600, 400);
         getContentPane().add(panel);
-        //setResizable(false);
+        setResizable(false);
         //pack();
-        //setLocationRelativeTo(null);
+        setLocationRelativeTo(null);
         setVisible(true);
 
-        button.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
 
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
                 try {
 
                     String decodedPath = null;
@@ -56,7 +60,6 @@ public class Main extends JFrame{
                     int pages;
 
                     jResults.setText("0");
-                    //System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\drivers\\chromedriver\\win32\\75.0.3770.140\\chromedriver.exe");
                     WebDriverManager.chromedriver().config().setTargetPath("C:\\Users\\" + System.getProperty("user.name") + "\\AppData\\Local\\Google\\Chrome\\Application");
                     WebDriverManager.chromedriver().setup();
 
@@ -86,16 +89,12 @@ public class Main extends JFrame{
 
                     for (int l = 0; l < pages; l++) {
 
+
                         List<WebElement> conexoes;
-
                         endOfPage(driver);
-
                         esperar(1);
-
                         endOfPage(driver);
-
                         esperar(1);
-
                         conexoes = conexoes = driver.findElements(By.xpath("//button[@data-control-name='srp_profile_actions']"));
 
                         for (int j = 0; j < conexoes.size(); j++) {
@@ -111,10 +110,10 @@ public class Main extends JFrame{
                                         conexoes.get(j).click();
                                         esperar(1);
 
-                                        if(!textFieldAddNota.getText().isEmpty()){
+                                        if(!textArea1.getText().isEmpty()){
                                             driver.findElement(By.xpath("//div[contains(@class,'send-invite__actions')]//button[1]")).click();
                                             new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.name("message")));
-                                            driver.findElement(By.name("message")).sendKeys(textFieldAddNota.getText());
+                                            driver.findElement(By.name("message")).sendKeys(textArea1.getText());
                                         }
 
                                         driver.findElement(By.xpath("//div[contains(@class,'send-invite__actions')]//button[2]")).click();
@@ -138,7 +137,6 @@ public class Main extends JFrame{
                     JOptionPane.showMessageDialog(null, "ERROR: " + ex.getMessage() + " \n\n ENTRE EM CONTATO COM RUBENS LOBO");
                 }
             }
-
         });
 
 
@@ -164,7 +162,6 @@ public class Main extends JFrame{
     public static void main(String[] args){
          new Main();
     }
-
 
 
     public void searchAnyThing(String value){
